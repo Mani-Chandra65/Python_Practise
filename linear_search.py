@@ -10,6 +10,7 @@ def verify(found):
     else:
         print("Target is not found!!")
 
-list = [1,2,3,4,5,6,7,8,9]
+list = input("Enter space seperated list elements:").split()
+list = [int(i) for i in input]
 found = search(list,8)
 verify(found)
