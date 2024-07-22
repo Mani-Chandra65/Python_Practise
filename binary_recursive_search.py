@@ -13,6 +13,7 @@ def binary_search(list,key):
 def verify(found):
     print("Target found:",found)
 
-list = [1,2,3,4,5,6,7,8,9]
+list = input("Enter space seperated list elements:").split()
+list = [int(i) for i in input]
 found = binary_search(list,2)
 verify(found)
