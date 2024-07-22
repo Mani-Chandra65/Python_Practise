@@ -17,8 +17,8 @@ def check(found):
     else:
         print("The element is found at index",found)
 
-
-list = [1,2,3,4,5,6,7,8,9]
+list = input("Enter space seperated list elements:").split()
+list = [int(i) for i in input]
 
 found = binary_search(list,8)
 check(found)
